@@ -6,7 +6,7 @@ from langchain_community.llms import Ollama
 import streamlit as st
 import os
 from dotenv import load_dotenv
-load_dotenv(dotenv_path="D:\Langchain\.env") 
+#load_dotenv(dotenv_path="D:\Langchain\.env") 
 
 ## Langmith tracking
 ##os.environ["LANGCHAIN_TRACING_V2"]="true"
