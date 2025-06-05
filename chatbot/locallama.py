@@ -6,11 +6,11 @@ from langchain_community.llms import Ollama
 import streamlit as st
 import os
 from dotenv import load_dotenv
-#load_dotenv(dotenv_path="D:\Langchain\.env") 
+load_dotenv() 
 
 ## Langmith tracking
-##os.environ["LANGCHAIN_TRACING_V2"]="true"
-#os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_TRACING_V2"]="true"
+os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
 prompt= ChatPromptTemplate.from_messages(
     [
@@ -19,7 +19,7 @@ prompt= ChatPromptTemplate.from_messages(
     ]
 )
 
-st.title('ChatBot0.0')
+st.title('naam pata nahi')
 input_text=st.text_input("ask me something.")
 
 #openAI llms
